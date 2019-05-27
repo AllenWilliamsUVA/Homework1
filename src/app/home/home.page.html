@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class = "header">
+      Allen Williams
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-avatar class="avatar">
+      <img
+        width="256"
+        src="assets/icon/headshot.jpeg"
+      />
+    </ion-avatar>
+  </div>
+  <div class = "job">
+    University of Virginia Student
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Firstname</ion-label>
+      Allen
+    </ion-item>
+    <ion-item>
+      <ion-label>Lastname</ion-label>
+      Williams
+    </ion-item>
+    <ion-item>
+      <ion-label>Major</ion-label>
+      Cognitive Science
+    </ion-item>
+    <ion-item>
+      <ion-label>Github</ion-label>
+      AllenWilliamsUVA
+    </ion-item>
+    <ion-item>
+      <ion-label>Date of Birth</ion-label>
+      <ion-datetime
+        disabled
+        displayFormat="MM/DD/YYYY"
+        [(ngModel)]="myDateOfBirth"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <div class="skills">
+    <h2>My Skills</h2>
+    <ion-chip>
+      <ion-label>Fortnite</ion-label>
+    </ion-chip>
+
+    <ion-chip color="danger">
+      <ion-label>Procrastination</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-icon name="pin"></ion-icon>
+      <ion-label>Location Services</ion-label>
+    </ion-chip>
+
+    <ion-chip>
+      <ion-icon name="code"></ion-icon>
+      <ion-label>JavaScript</ion-label>
+    </ion-chip>
+
+  </div>
+
+  <ion-button (click)="pressMe()">Press Me</ion-button>
+</ion-content>
